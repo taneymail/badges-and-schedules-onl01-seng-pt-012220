@@ -1,4 +1,4 @@
-batch_badge_creator = [Edsger, Ada, Charles, Alan, Grace, Limus, Matz]
+batch_badge_creator = [Edsger, Ada, Charles, Alan, Grace, Linus, Matz]
 
 count = 0 
 while count <= batch_badge_creator.length-1
