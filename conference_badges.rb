@@ -2,30 +2,30 @@ def badge_maker(name)
   return "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(arr)
+def batch_badge_creator(attendees)
   new_array = []
-  arr.each do |name|
+  attendees.each do |name|
     new_array.push("Hello, my name is #{name}.")
   end
   return new_array
 end
 
-def assign_rooms(arr)
+def assign_rooms(attendees)
   new_array = []
   counter = 1
-  arr.each do |name|
+  attendees.each do |name|
   new_array.push("Hello, #{name}! You'll be assigned to room #{counter}!")
   counter+=1
   end
   return new_array  
 end
 
-def printer(arr)
-  batch_badge_creator(arr).each do |badge|
+def printer(attendees)
+  batch_badge_creator(attendees).each do |badge|
     puts badge
   end
 
-  assign_rooms(arr).each do |assignment|
-    puts assignment
+  assign_rooms(attendees).each do |room_num|
+    puts room_num
   end
 end
